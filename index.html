@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/Logo-min.ico">
+    <title>Mi Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="#inicio" class="logo-link"> &ltK/A&gt; </a></h1>
+    </div>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<!----- INICIO ------>
+    <section class="Inicio" id="inicio">
+        <div class="inicio-title">
+            <h1 class="title">Hola,<br>Soy <span class="title-color">Krisna</span><br>estudiante de<br>TP</h1>
+        </div>
+
+    <div class="inicio-social">
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="inicio-social-icon"><i class='bx bxl-google' ></i></i></a>
+        <a href="https://github.com/Krisnazz" class="inicio-social-icon"><i class='bx bxl-github' ></i></a>
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="inicio-social-icon"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+
+    <div class="inicio-img">
+        <img src="images/ICON.png" width="300px" alt="">
+    </div>
+    </section>
+
+
+    <!----- Sobre Mi------>
+    <section class="sobre-mi-seccion" id="sobre-mi">
+        <h2 class="sobre-mi-title">Sobre mi</h2>
+
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-img">
+                <img src="images/Avatar.png" alt="">
+            </div>
+            
+            <div>
+                <h2 class="sobre-mi-sub">Soy Krisna</h2>
+                <p class="sobre-mi-texto">Hola, soy Krisna Ovalle. Tengo 17 años y actualmente estoy estudiando. Creo diseños y páginas web de distintos tipos, incluyendo carritos de compra y páginas simples. Me gusta bastante programar, ya que es increible como un lenguaje de programacion puede crear estilos y estructuras que se ven simples, pero tienen un gran trabajo por detras.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----- Habilidades------>
+        <section class="habilidades-seccion" id="habilidades">
+            <h2 class="habilidades-title">Habilidades</h2>
+    
+            <div class="habilidades-container">
+                <div>
+                    <h2 class="habilidades-sub">Conocimiento</h2>
+                    <p class="habilidades-texto">Mi conocimiento es variado. Actualmente, trabajo con HTML, CSS y JS. Tengo una mayor experiencia en HTML y CSS, aunque JavaScript es un lenguaje que conozco actualmente, me resulta un poco más difícil implementarlo, especialmente en códigos más complejos. Sin embargo, me resulta fácil aprenderlo a través de ejercicios o con el tiempo, lo que me permitirá implementarlo con facilidad.</p>
+                </div>
+            </div>
+
+                <div class="habilidades-cuadro">
+                    <div class="habilidades-recuadro">
+                        <img src="images/HTML.png" alt="HTML" width="110px">
+                    </div>
+                    <div class="habilidades-recuadro">
+                        <img src="images/CSS.png" alt="CSS" width="120px" height="110px">
+                    </div>
+                    
+                    <div class="habilidades-recuadro">
+                        <img src="images/JS.webp" alt="JS" width="110px">
+                    </div>
+                </div>
+        </section>
+
+            <section class="progress-section">
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%;">
+                        <span class="progress-bar-text">90%</span>
+                    </div>
+                </div>
+            
+                <div class="progress">
+                    <div class="progress-bar" style="width:89%;">
+                        <span class="progress-bar-text">89%</span>
+                    </div>
+                </div>
+            
+                <div class="progress">
+                    <div class="progress-bar" style="width:20%;">
+                        <span class="progress-bar-text">20%</span>
+                    </div>
+                </div>
+            </section>
+
+
+    <!-----Contacto------>
+    <section class="contacto-seccion" id="contacto">
+        <h2 class="contacto-title">Contacto</h2>
+    <div class="contacto-area">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Escribe tu nombre">
+            <label for="correo">Correo:</label>
+            <input type="text" placeholder="Escribe tu correo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" placeholder="Escribe un mensaje" id="" rows="4"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

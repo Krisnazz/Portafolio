@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;600;700&family=Montserrat&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: #dbdbdb48;
+    font-family: 'Montserrat';
+}
+
+/* ===== NAV =====*/
+.top-nav{
+    background-color: white;
+    height: 45px;
+    font-weight: bold;
+    box-shadow: 0px 6px 10px 1px #9b9b9b40;
+    padding-top: 25px;
+    top:0;
+    width:100%;
+}
+
+.logo{
+    float: left;
+    margin-top: 0;
+    position: relative;
+}
+
+.logo h1{
+    margin: 20px 74px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #229788b7;
+}
+
+.logo-link{
+    transition: color 0.3s;
+}
+
+.logo-link:hover{
+    color: #1a6e52;
+}
+
+.top-nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+
+    .top-nav li{
+    display: inline;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin: 30px;
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: larger;
+}
+
+.top-nav a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+.top-nav a:hover{
+    color: #229788b7;
+}
+
+.top-nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #197268b7;
+    left: 0;
+    bottom: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.top-nav a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* ===== INICIO =====*/
+
+.inicio-title{
+    margin-left: 85px;
+    margin-top: 50px;
+}
+
+.title{
+    font-size: 60px;
+    color: #333;
+}
+
+.title-color{
+    color: #229788b7;
+}
+
+.inicio-social-icon{
+    display: inline-block;
+    margin-left: 85px;
+    margin-top: 100px;
+    color: #229788b7;
+}
+
+.inicio-social-icon i{
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.inicio-social-icon:hover{
+    color: #0c3631b7;
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+
+.inicio-img{
+    float: right;
+    margin-top: -400px;
+    margin-right: 150px;
+}
+
+.inicio-img img{
+    border-radius: 50%;
+    border: 3px dotted #229788b7; 
+}
+
+/* ===== SOBRE MI =====*/
+
+.sobre-mi-container{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+.sobre-mi-title{
+    color: #229788b7;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-align: center;
+    margin-top: 230px;
+    font-size: 35px;
+}
+
+.sobre-mi-texto, .sobre-mi-sub{
+    color: #333;
+    max-width: 500px;
+    margin: 20px 140px;
+}
+
+.sobre-mi-sub{
+    margin-top: 70px;
+}
+
+.sobre-mi-img img{
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 30px;
+    border-radius: 50%;
+    padding: 1px;
+    background: linear-gradient(to bottom right, #229788b7, #1a6e52);
+}
+/* ===== HABILIDADES =====*/
+
+
+.habilidades-title{
+    color: #229788b7;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 35px;
+}
+
+.habilidades-sub, .habilidades-texto{
+    color: #333;
+    max-width: 500px;
+    margin: 20px 60px;
+}
+
+.habilidades-sub{
+    margin-top: 65px;
+}
+
+.habilidades-cuadro{
+    display: flex;
+    justify-content: center;
+}
+
+.habilidades-recuadro{
+    border-radius: 50%;
+    padding: 45px;
+    margin: 30px 65px;
+    border: 1px solid #1a796cb7;
+    outline: 2px solid #229788b7;
+}
+
+.habilidades-recuadro:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* ===== BARRA DE PROGRESO=====*/
+
+.progress-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.progress {
+    height: 35px;
+    width: 20%;
+    border: 3px solid #229788b7;
+    border-radius: 20px;
+    background-color: #dbdbdb48;
+    margin: 0 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #229788b7;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+}
+
+.progress-bar-text {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #ffffff
+}
+
+/* ===== CONTACTO =====*/
+
+.contacto-title{
+    color: #229788b7;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+}
+
+.contacto-area{
+    width: 300px;
+    margin: 60px auto;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid #229788b7;
+    background-image: url(images/FONDO.jpg);
+}
+
+.contacto-area form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-area label{
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.contacto-area input, .contacto-area textarea{
+    padding: 10px;
+    border: 1px solid #229788b7;
+    border-radius: 5px;
+}
+
+.contacto-area button{
+    background: linear-gradient(to bottom right, #229788b7, #1a6e52);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 35px;
+    margin-top: 20px;
+    font-weight: bold;
+}
